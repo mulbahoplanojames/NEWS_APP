@@ -13,10 +13,10 @@ const Swap = () => {
         <input type="checkbox" onClick={toggleDarkMode} />
 
         {/* sun icon */}
-        <MdOutlineWbSunny className="swap-on w-6 h-6 fill-current" />
+        <MdOutlineWbSunny className="swap-on w-5 h-5 fill-current" />
 
         {/* moon icon */}
-        <FaRegMoon className="swap-off w-6 h-6 fill-current" />
+        <FaRegMoon className="swap-off w-5 h-5 fill-current" />
       </label>
     </>
   );
