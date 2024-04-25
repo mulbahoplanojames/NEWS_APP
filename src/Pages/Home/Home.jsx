@@ -12,7 +12,6 @@ const Home = () => {
         className={`h-80 w-1/2 rounded-md shadow-lg ${darkMode && "bg-white"}`}
       ></div> */}
       <Hero />
-      <Link to="world">Click to world</Link>
     </div>
   );
 };

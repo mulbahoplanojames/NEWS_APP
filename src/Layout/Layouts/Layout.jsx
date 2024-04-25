@@ -24,7 +24,7 @@ const Layout = () => {
 
   return (
     // The main section of the page. This is the container for all the page content.
-    <section className="md:px-16 w-screen h-screen px-3" style={darkModeStyle}>
+    <section className="md:px-16 px-3" style={darkModeStyle}>
       {/* The Navbar component */}
       <Navbar />
       <Navigations />

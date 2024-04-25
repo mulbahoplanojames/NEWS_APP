@@ -21,7 +21,7 @@ const AppContextProvider = (props) => {
 
   // I create this object to provide CSS styles for the app based on the `darkMode` state.
   const darkModeStyle = {
-    backgroundColor: darkMode ? "#1d232a" : "white",
+    backgroundColor: darkMode ? "#1d232a" : "#f8f9f5",
     color: darkMode ? "white" : "#1d232a",
   };
 
