@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { AppContext } from "../../Context/Context";
 import { useContext } from "react";
-import Navigations from "../../Components/Navigations/Navigations";
+import Hero from "../../Components/Home_Hero/Hero";
 
 const Home = () => {
   const { darkMode } = useContext(AppContext);
@@ -11,7 +11,7 @@ const Home = () => {
       {/* <div
         className={`h-80 w-1/2 rounded-md shadow-lg ${darkMode && "bg-white"}`}
       ></div> */}
-      <Navigations />
+      <Hero />
       <Link to="world">Click to world</Link>
     </div>
   );

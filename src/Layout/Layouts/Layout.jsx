@@ -11,6 +11,7 @@ import Footer from "../Footer/Footer";
  * from the `AppContext`
  */
 import { AppContext } from "../../Context/Context";
+import Navigations from "../../Components/Navigations/Navigations";
 
 /**
  *@description This is the Layout component for all pages. This component will
@@ -26,6 +27,7 @@ const Layout = () => {
     <section className="md:px-16 w-screen h-screen px-3" style={darkModeStyle}>
       {/* The Navbar component */}
       <Navbar />
+      <Navigations />
       {/* The Outlet component that will render the current route. */}
       <div>{<Outlet />}</div>
       {/* The Footer component */}

@@ -4,7 +4,7 @@ import PrimaryButton from "../../Interfaces/Primary_Button/PrimaryButton";
 const Navigations = () => {
   return (
     <>
-      <section className="lg:overflow-x-hidden flex gap-3 pt-6 overflow-x-auto">
+      <section className="lg:overflow-x-hidden flex gap-3 pt-6 pb-6 overflow-x-auto">
         {NAVIGATION_LINKS.map((link) => (
           <PrimaryButton key={link.label} text={link.label} path={link.path} />
         ))}
