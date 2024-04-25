@@ -9,7 +9,7 @@ import Swap from "../../Components/Swap/Swap";
 const Navbar = () => {
   return (
     <>
-      <nav className="flex items-center justify-between py-6">
+      <nav className=" flex items-center justify-between py-6">
         {/* The menu icon */}
         <MdOutlineMenu className="text-3xl cursor-pointer" />
         {/* The app's name */}

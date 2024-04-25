@@ -10,7 +10,7 @@ import Footer from "../Footer/Footer";
  * and share global data to all components. I this component i am accessing the `darkModeStyle`
  * from the `AppContext`
  */
-import { AppContext } from "../../COntext/Context";
+import { AppContext } from "../../Context/Context";
 
 /**
  *@description This is the Layout component for all pages. This component will
@@ -23,7 +23,7 @@ const Layout = () => {
 
   return (
     // The main section of the page. This is the container for all the page content.
-    <section className="md:px-16 w-screen h-screen px-6" style={darkModeStyle}>
+    <section className="md:px-16 w-screen h-screen px-3" style={darkModeStyle}>
       {/* The Navbar component */}
       <Navbar />
       {/* The Outlet component that will render the current route. */}

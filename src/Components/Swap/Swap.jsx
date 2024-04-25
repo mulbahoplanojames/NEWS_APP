@@ -1,7 +1,7 @@
 import { MdOutlineWbSunny } from "react-icons/md";
 import { FaRegMoon } from "react-icons/fa";
 import { useContext } from "react";
-import { AppContext } from "../../COntext/Context";
+import { AppContext } from "../../Context/Context";
 
 const Swap = () => {
   const { toggleDarkMode } = useContext(AppContext);
