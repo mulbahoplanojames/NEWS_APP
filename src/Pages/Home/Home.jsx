@@ -1,17 +1,14 @@
-import { Link } from "react-router-dom";
-import { AppContext } from "../../Context/Context";
-import { useContext } from "react";
+import { Outlet } from "react-router-dom";
 import Hero from "../../Components/Home_Hero/Hero";
+import CategoryNavigation from "../../Components/Category_Navigation/CategoryNavigation";
+// import TopCategories from "../../Components/Top_Categories/TopCategories";
 
 const Home = () => {
-  const { darkMode } = useContext(AppContext);
-
   return (
     <div>
-      {/* <div
-        className={`h-80 w-1/2 rounded-md shadow-lg ${darkMode && "bg-white"}`}
-      ></div> */}
       <Hero />
+      <CategoryNavigation />
+      <div className="">{<Outlet />}</div>
     </div>
   );
 };

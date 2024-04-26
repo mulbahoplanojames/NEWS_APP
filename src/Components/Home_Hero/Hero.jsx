@@ -8,24 +8,24 @@ import { handleBitcoinFetch } from "../../API/Bitcoins";
 
 // Component for the home hero component
 const Hero = () => {
-  // I am accessing the `darkMode` state from the `AppContext`
+  //! I am accessing the `darkMode` state from the `AppContext`
   const { darkMode } = useContext(AppContext);
 
-  // State to hold the news from the API, i am getting the `newObject` from the `Data/Data.js`
+  //! State to hold the news from the API, i am getting the `newObject` from the `Data/Data.js`
   const [sportNews, setSportNews] = useState(newObject);
   const [bitcoinNews, setBitcoinNews] = useState(newObject);
   const [technologyNews, setTechnologyNews] = useState(newObject);
   const [entertainmentNews, setEntertainmentNews] = useState(newObject);
 
-  // Use effect to fetch the news from the API on the first mount or render
-  useEffect(() => {
-    handleSportFetch(sportNews, setSportNews);
-    handleBitcoinFetch(bitcoinNews, setBitcoinNews);
-    handleTechnologyFetch(technologyNews, setTechnologyNews);
-    handleEntertainmentFetch(entertainmentNews, setEntertainmentNews);
-  }, []);
+  //! Use effect to fetch the news from the API on the first mount or render
+  // useEffect(() => {
+  //   handleSportFetch(sportNews, setSportNews);
+  //   handleBitcoinFetch(bitcoinNews, setBitcoinNews);
+  //   handleTechnologyFetch(technologyNews, setTechnologyNews);
+  //   handleEntertainmentFetch(entertainmentNews, setEntertainmentNews);
+  // }, []);
 
-  // shotten the title if it's too long
+  //! shotten the title if it's too long
   if (sportNews.title.length > 50) {
     sportNews.title = sportNews.description.slice(0, 80) + "...";
   } else if (bitcoinNews.title.length > 50) {
@@ -36,7 +36,7 @@ const Hero = () => {
     entertainmentNews.title =
       entertainmentNews.description.slice(0, 80) + "...";
   } else {
-    sportNews.title = sportNews.title + ".......";
+    sportNews.title = sportNews.title + "...";
     bitcoinNews.title = bitcoinNews.title + ".......";
     technologyNews.title = technologyNews.title + ".......";
     entertainmentNews.title = entertainmentNews.title + ".......";
@@ -44,11 +44,9 @@ const Hero = () => {
 
   return (
     <>
-      <div
-        className={`md:grid-cols-1 lg:grid-cols-2 grid grid-cols-1 gap-12 ${
-          darkMode ? "dark" : ""
-        }`}
-      >
+      {/* main hero wrapper div */}
+      <div className="md:grid-cols-1 lg:grid-cols-2 grid grid-cols-1 gap-12 mb-16">
+        {/* The first news card */}
         <div className={`h-fit ${darkMode ? "shadow-none" : "shadow-xl"} `}>
           <div className="bg-blue-500  h-[280px] overflow-hidden">
             <img src={bitcoinNews.image} alt="" className="w-full h-full" />
@@ -64,8 +62,10 @@ const Hero = () => {
           </div>
         </div>
 
+        {/* second grid child div */}
         <div className="h-fit">
           <div className="grid grid-cols-2 gap-8">
+            {/* The second news card */}
             <div className="h-[240px]  rounded-md overflow-hidden shadow-lg">
               <div className="h-[140px] bg-fuchsia-700">
                 <img
@@ -76,6 +76,8 @@ const Hero = () => {
               </div>
               <p className="pt-2 text-base">{entertainmentNews.title}</p>
             </div>
+
+            {/* The third news card */}
             <div className="h-[240px]  rounded-md overflow-hidden  shadow-lg">
               <div className="h-[140px] bg-red-700">
                 <img src={sportNews.image} alt="" className="w-full h-full" />
@@ -84,6 +86,7 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* The fourth news card */}
           <div className="h-fit flex gap-2 mt-5 rounded-md shadow-xl">
             <div className="h-[160px] ">
               <img

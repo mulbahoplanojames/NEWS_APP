@@ -11,3 +11,10 @@ const NAVIGATION_LINKS = [
 ];
 
 export default NAVIGATION_LINKS;
+
+export const ALL_CATEGORIES_LINKS = [
+  { label: "All", path: "/home" },
+  { label: "Food", path: "food-category" },
+  { label: "Cars", path: "cars-category" },
+  { label: "Lifestyles", path: "lifestyles-category" },
+];
