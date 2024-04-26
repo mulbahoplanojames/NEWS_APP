@@ -4,8 +4,10 @@ import { ALL_CATEGORIES_LINKS } from "../../Constant/Constant";
 const CategoryNavigation = () => {
   return (
     <>
-      <nav className=" mb-7 flex items-center justify-between pb-4 border-b-2 border-gray-300">
-        <h1 className="text-xl font-extrabold uppercase">Top Categories</h1>
+      <nav className=" mb-7 gap-9 flex items-center justify-between pb-4 border-b-2 border-gray-300">
+        <h1 className="md:text-xl text-md font-extrabold uppercase">
+          Top Categories
+        </h1>
         <menu className="md:gap-8 flex items-center gap-5">
           {ALL_CATEGORIES_LINKS.map((link) => (
             <Link
