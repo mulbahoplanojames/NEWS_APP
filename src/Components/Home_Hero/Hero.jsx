@@ -23,7 +23,7 @@ const Hero = () => {
   //   handleBitcoinFetch(bitcoinNews, setBitcoinNews);
   //   handleTechnologyFetch(technologyNews, setTechnologyNews);
   //   handleEntertainmentFetch(entertainmentNews, setEntertainmentNews);
-  // }, []);
+  // }, [sportNews, bitcoinNews, technologyNews, entertainmentNews]);
 
   //! shotten the title if it's too long
   if (sportNews.title.length > 50) {
