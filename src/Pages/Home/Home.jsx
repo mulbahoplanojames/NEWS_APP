@@ -9,6 +9,7 @@ const Home = () => {
       <Hero />
       <CategoryNavigation />
       <div className="">{<Outlet />}</div>
+      <div className="w-[600px] h-[500px] bg-red-400 mt-5"></div>
     </div>
   );
 };

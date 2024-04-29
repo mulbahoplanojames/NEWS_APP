@@ -18,12 +18,12 @@ const Hero = () => {
   const [entertainmentNews, setEntertainmentNews] = useState(newObject);
 
   //! Use effect to fetch the news from the API on the first mount or render
-  // useEffect(() => {
-  //   handleSportFetch(sportNews, setSportNews);
-  //   handleBitcoinFetch(bitcoinNews, setBitcoinNews);
-  //   handleTechnologyFetch(technologyNews, setTechnologyNews);
-  //   handleEntertainmentFetch(entertainmentNews, setEntertainmentNews);
-  // }, [sportNews, bitcoinNews, technologyNews, entertainmentNews]);
+  useEffect(() => {
+    handleSportFetch(sportNews, setSportNews);
+    handleBitcoinFetch(bitcoinNews, setBitcoinNews);
+    handleTechnologyFetch(technologyNews, setTechnologyNews);
+    handleEntertainmentFetch(entertainmentNews, setEntertainmentNews);
+  }, [sportNews, bitcoinNews, technologyNews, entertainmentNews]);
 
   //! shotten the title if it's too long
   if (sportNews.title.length > 50) {

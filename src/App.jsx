@@ -23,6 +23,7 @@ const App = () => {
                 element={<LifeStyleCategory />}
               />
             </Route>
+
             <Route path="world" element={<World />} />
           </Route>
 
