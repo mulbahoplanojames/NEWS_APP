@@ -57,15 +57,15 @@ const TopCategories = () => {
             <div className="">
               <h1 className="pb-2 text-base">
                 The ctypto market is on the verge of collapse. Here are some of
-                the latest tips on what to do.
+                the latest tips ad tricks.
               </h1>
-              <p className="pb-1">Oplano james Mulbah</p>
-              <p>June 5 2043, 11:23:344</p>
+              <p className="pb-1 font-semibold">Author: Rechard</p>
+              <p className="font-semibold">Date: May 3 2043, 4:36</p>
             </div>
           </div>
         </div>
 
-        <div className="bg-red-600 rounded-md h-[430px] grid place-items-center text-center">
+        <div className="bg-[#eaeef3] rounded-md h-[430px] grid place-items-center text-center">
           <h1 className="text-5xl">Aids will be provided here</h1>
         </div>
       </div>
