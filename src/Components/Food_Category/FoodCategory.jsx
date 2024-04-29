@@ -48,8 +48,8 @@ const FoodCategory = () => {
             </div>
             <div className="">
               <h1 className="pb-2 text-base">
-                The ctypto market is on the verge of collapse. Here are some of
-                the latest tips ad tricks.
+                All of the best cakes you need to have or eat in one big meal
+                with a good nutrient....
               </h1>
               <p className="pb-1 font-semibold">Author: Rechard</p>
               <p className="font-semibold">Date: May 3 2043, 4:36</p>

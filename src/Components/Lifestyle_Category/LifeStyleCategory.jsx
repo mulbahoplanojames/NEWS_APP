@@ -1,22 +1,26 @@
 import { Link } from "react-router-dom";
 
-import bitcoin from "/src/assets/bitcoin.webp";
-import car from "/src/assets/car.avif";
-import food from "/src/assets/food.webp";
-import sport from "/src/assets/sport.avif";
+import lifestyle1 from "/src/assets/lifestyle3.jpg";
+import lifestyle2 from "/src/assets/lifestyle1.jpg";
+import lifestyle3 from "/src/assets/lifestyle2.jpg";
+import lifestyle4 from "/src/assets/lifestyle.jpg";
 
 const LifeStyleCategory = () => {
   return (
     <>
       <div className="lg:grid-cols-3 grid grid-cols-1 gap-5">
         <div className=" h-[430px] rounded-lg overflow-hidden shadow-lg">
-          <img src={sport} alt={"sports"} className="w-full h-full" />
+          <img src={lifestyle4} alt={"sports"} className="w-full h-full" />
         </div>
 
         <div className="h-fit ">
           <div className="h-fit flex justify-between gap-3 mb-4">
             <div className="h-[130px] w-[250px] rounded-md overflow-hidden">
-              <img src={car} alt={"bitcoin"} className="w-full h-full" />
+              <img
+                src={lifestyle2}
+                alt={"lifestyle image"}
+                className="w-full h-full"
+              />
             </div>
             <div className="">
               <h1 className="pb-2 text-base">
@@ -30,7 +34,7 @@ const LifeStyleCategory = () => {
 
           <div className="h-fit flex justify-between gap-3 mb-4">
             <div className="h-[130px] w-[250px] bg-green-700 rounded-md overflow-hidden">
-              <img src={food} alt={"Food"} className="w-full h-full" />
+              <img src={lifestyle3} alt={"Food"} className="w-full h-full" />
             </div>
             <div className="">
               <h1 className="pb-2 text-base">
@@ -44,7 +48,11 @@ const LifeStyleCategory = () => {
 
           <div className="h-fit flex justify-between gap-3">
             <div className="h-[130px] w-[250px] bg-green-700 rounded-md overflow-hidden">
-              <img src={bitcoin} alt={"bitcoin"} className="w-full h-full" />
+              <img
+                src={lifestyle1}
+                alt={"lifyetyle image"}
+                className="w-full h-full"
+              />
             </div>
             <div className="">
               <h1 className="pb-2 text-base">
