@@ -27,7 +27,7 @@ const TopCategories = () => {
               <img src={car} alt={"bitcoin"} className="w-full h-full" />
             </div>
             <div className="">
-              <h1 className="text-primary pb-2 text-base">
+              <h1 className="pb-2 text-base">
                 Toyota is talking about releasing her first electric car in
                 India and we are excited to see it.
               </h1>
