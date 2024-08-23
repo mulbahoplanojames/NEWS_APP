@@ -17,14 +17,16 @@ const Recipe = () => {
   const [recipes, setRecipes] = useState<RecipeType[]>([]);
   const [visibleRecipes, setVisibleRecipes] = useState<number>(3);
 
-  const handleSearch = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSearch = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
     e.preventDefault();
 
     try {
       const response = await axios.get(
         `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`
       );
-      console.log(response);
+      //   console.log(response);
       setRecipes(response.data.meals ?? []);
     } catch (error) {
       console.log(error);
