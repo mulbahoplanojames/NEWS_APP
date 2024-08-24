@@ -42,11 +42,12 @@ const Recipe = () => {
       <div className="text-center md:py-28 md:px-44 py-12 px-5 bg-[#1d232a]">
         <form
           onSubmit={handleSearch}
-          className="flex justify-between items-center gap-5"
+          className="flex items-center justify-between gap-5"
         >
           <input
             type="text"
-            className="flex-1 md:py-4 py-2 md:px-10 px-4 rounded-full outline-none "
+            placeholder="Enter the Recipe name"
+            className="md:py-4 md:px-10 flex-1 px-4 py-2 rounded-full outline-none"
             value={searchTerm}
             onChange={(e) => setSerchTerm(e.target.value)}
           />
@@ -62,8 +63,8 @@ const Recipe = () => {
         </h1>
       </div>
 
-      <section className="md:py-14 py-8 bg-slate-50 md:px-20 px-2">
-        <div className="lg:grid-cols-3 grid md:grid-cols-2 grid-cols-1 gap-5 ">
+      <section className="md:py-14 bg-slate-50 md:px-20 px-2 py-8">
+        <div className="lg:grid-cols-3 md:grid-cols-2 grid grid-cols-1 gap-5">
           {recipes.slice(0, visibleRecipes).map((recipe) => (
             <div
               key={recipe.idMeal}
