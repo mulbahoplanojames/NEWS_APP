@@ -39,7 +39,7 @@ const Recipe = () => {
 
   return (
     <>
-      <div className="text-center md:py-28 md:px-44 py-12 px-5 bg-[#1d232a]">
+      <div className="text-center md:py-28 md:px-44 py-12 px-5 bg-[#1d232a] block fixed top-0 w-full md:static">
         <form
           onSubmit={handleSearch}
           className="flex items-center justify-between gap-5"
