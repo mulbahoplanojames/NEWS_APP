@@ -63,7 +63,7 @@ const Recipe = () => {
         </h1>
       </div>
 
-      <section className="md:py-14 bg-slate-50 md:px-20 md:mt-2 mt-72 px-2 py-8">
+      <section className="md:py-14 bg-slate-50 md:px-20 md:mt-2 pt-72 px-2 pb-8">
         <div className="lg:grid-cols-3 md:grid-cols-2 grid grid-cols-1 gap-5">
           {recipes.slice(0, visibleRecipes).map((recipe) => (
             <div
